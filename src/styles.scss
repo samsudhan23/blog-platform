@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* General styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .post {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .post {
+      padding: 5px 0;
+    }
+  }
+  

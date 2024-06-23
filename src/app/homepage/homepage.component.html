@@ -1,0 +1,22 @@
+
+<div style="background-color: antiquewhite; height: 100vh;">
+
+
+<div class="mainhead">
+ <h1 class="head">Travel Blog</h1> 
+</div>
+
+<div class="card-group " >
+  <div class="card" *ngFor="let post of blogPosts">
+    <img  style="" src={{post.image}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ post.title }}</h5>
+      <p style="font-family: sans-serif; font-size: 15px;" class="card-text">{{ post.content }}</p>
+      <button [routerLink]="['/post', post.id]" type="button" class="btn btn-link btn1 ">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+    </div>
+  </div>
+  
+</div>
+
+</div>

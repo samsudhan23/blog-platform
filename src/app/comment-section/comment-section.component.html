@@ -1,0 +1,10 @@
+<div class="comments">
+    <h3>Comments</h3>
+    <ul>
+      <li *ngFor="let comment of comments">{{ comment }}</li>
+    </ul>
+    <input [(ngModel)]="newComment" placeholder="Add a comment" />
+    <button (click)="addComment()">Submit</button>
+  </div>
+  
+  
